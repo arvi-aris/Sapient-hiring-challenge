@@ -9,6 +9,7 @@ import Chip from 'material-ui/Chip';
 import AutoComplete from 'material-ui/AutoComplete';
 import SortUp from 'material-ui/svg-icons/navigation/arrow-upward';
 import SortDown from 'material-ui/svg-icons/navigation/arrow-downward';
+import Person from 'material-ui/svg-icons/social/person';
 
 const style = {
 	'background-color': '#3a3a3a',
@@ -155,6 +156,7 @@ constructor(props) {
 	        	<Chip style={{margin:'15px'}} onRequestDelete={this.resetGenre}>
 		        {this.state.filterData.genre}
 		    </Chip> : <div></div> }
+        <a target="_blank" href="https://www.linkedin.com/in/aravindh-nagarajan-58b91191/" ><Person style={{margin: '20px', fill:'white'}}/></a>
 		</AppBar>
         <GameArea onDropDownOptions={this.onDropDownOptions} filterData={this.state.filterData}/>
       </div>
